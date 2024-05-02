@@ -1,0 +1,123 @@
+/* CSS styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-content{
+    display:  flex;
+    background-color: #007bff;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ 
+
+  #add-tab {
+    font-size : 1rem;
+    font-weight: bold;
+    margin: 2px;
+  }
+
+  #url-input{
+    font-size: 16px;
+    font-family: inherit;
+    padding: 0.5em 0.5em;
+    background-color: #fff;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+    outline: #007bff;
+  }
+
+  .tabs-content{
+    display: flex;
+    justify-content: space-between;
+  }
+  #frame-content {
+    width: 60%;
+    padding-top: 56.25%; 
+    position: relative; 
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tabs-content {
+    display: flex;
+    width: 100%; /* Takes full width of its parent */
+    height: auto; /* Adjust height as needed */
+  }
+  
+  #frame-content {
+    width: 70%;
+    height: 300px;
+  }
+  
+  #tabs-container {
+    width: 30%;
+    height: 850px; /* Should match the height of frame-content for alignment */
+    overflow: scroll;
+  }
+  
+  #tabs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #tabs li {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: #000;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  }
+  #tabs li button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+    
+  #add-tab:hover {
+    cursor: pointer;
+  }
+
+ 
+  #tabs li.active {
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  }
+  #tabs li.active button {
+    background-color: #FFFFFF;
+    color: #000;
+  }
+  /* .tab-content {
+    display: none;
+  }
+  .tab-content.active {
+    display: block;
+  } */
+  
